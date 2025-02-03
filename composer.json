@@ -1,0 +1,24 @@
+{
+    "name": "soampliapps/common-console-commands",
+    "type": "library",
+    "description": "Some common symfony console commands",
+    "keywords": [
+        "console",
+        "commands",
+        "pheanstalk"
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "symfony/console": ">=2.3"
+    },
+    "authors": [],
+    "license": "MIT",
+    "autoload": {
+        "psr-0": {
+            "SoampliApps\\Commands": ""
+        }
+    },
+    "suggest": {
+        "pda/pheanstalk": "Allows use of the pheanstalk related commands"
+    }
+}
