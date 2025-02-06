@@ -10,7 +10,7 @@ class PheanstalkListCommand extends AbstractPheanstalkCommand
 			->setDescription('List tubes');
 	}
 
-	protected function execute(\Symfony\Component\Console\Input\InputInterface $input, \Symfony\Component\Console\Output\OutputInterface $output)
+	protected function execute(\Symfony\Component\Console\Input\InputInterface $input, \Symfony\Component\Console\Output\OutputInterface $output): int
 	{
 		$data = $this->getPheanstalk()->listTubes();
 		$output->writeln("<comment>Tubes</comment>");

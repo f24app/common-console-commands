@@ -15,7 +15,7 @@ class PheanstalkDeleteCommand extends AbstractPheanstalkCommand
 			);
 	}
 
-	protected function execute(\Symfony\Component\Console\Input\InputInterface $input, \Symfony\Component\Console\Output\OutputInterface $output)
+	protected function execute(\Symfony\Component\Console\Input\InputInterface $input, \Symfony\Component\Console\Output\OutputInterface $output): int
 	{
 		$tube = $input->getArgument('tube_name');
 		try {
